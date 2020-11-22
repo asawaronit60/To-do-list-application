@@ -1,9 +1,4 @@
-//jshint esversion:6
-// working
-// working
-// working
-// working
-//Ronit-todolist --passs
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -80,8 +75,7 @@ app.get("/:customListName", function(req, res){
         list.save();
         res.redirect("/" + customListName);
       } else {
-        //Show an existing list
-
+       
         res.render("list", {listTitle: foundList.name, newListItems: foundList.items});
       }
     }
