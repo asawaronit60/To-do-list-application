@@ -1,2 +1,2 @@
 # To-do-list-application
-a to do list application with a database to store list
+A to do list application in node.js with Express.js using mongodb database to store list
